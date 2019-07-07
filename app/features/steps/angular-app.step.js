@@ -1,4 +1,4 @@
-var expect = require('chai').expect
+var angularPage = require('../../pages/angular-page')
 
 module.exports = function () {
     this.Given('I\'m on AngularJS page', () => {
@@ -6,14 +6,11 @@ module.exports = function () {
     });
 
     this.When('Enter data in textbox', function () {
-        element(by.model('todoList.todoText')).sendKeys('write first protractor test');
-        element(by.css('[value="add"]')).click();
+        angularPage.setTextTodo('test');
+        angularPage.clickAddButton();
     });
 
     this.Then('Validate data in textbox', () => {
-        var todoList = element.all(by.xpath('//ul//li//label//span'));
-        todoList.count().then((result) => {
-            expect(result).to.equal(3);
-        })
+        angularPage.validateData();
     })
 }
