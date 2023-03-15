@@ -1,0 +1,17 @@
+{
+  "name": "cucumberjs-protractor-reporter",
+  "version": "1.0.3",
+  "description": "protractor with Cucumber JS",
+  "license": "ISC",
+  "peerDependencies": {
+    "cucumber": ">= 1.2.0"
+  },
+  "devDependencies": {
+    "cucumber": "1.2.1",
+    "protractor": "3.3.0",
+    "protractor-cucumber-framework": "0.6.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
