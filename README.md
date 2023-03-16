@@ -19,5 +19,3 @@ Then login popup shows up
 ```
 
 # Execution
-
-

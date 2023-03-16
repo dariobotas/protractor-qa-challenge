@@ -1,0 +1,11 @@
+[
+  {
+    "description": "Flight search",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 10906000
+  }
+]
