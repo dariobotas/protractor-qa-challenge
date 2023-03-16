@@ -2,6 +2,7 @@ const { browser, element } = require('protractor');
 
 var expect = require('chai').expect
 
+//Locators
 const cookies = element(by.xpath('//*[@id="cookie-popup-with-overlay"]/div/div[3]/button[2]'));
 //const clearSelection = element(by.css('button[aria-label="Clear Selection"]'));
 const clearSelectionDeparture = element.all(by.xpath('//*[@id="ry-tooltip-1"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/div/fsw-airports-list/div[1]/button'));
@@ -20,12 +21,13 @@ const selectInfantXPath = element(by.xpath('//*[@id="ry-tooltip-8"]/div[2]/hp-ap
 const selectDoneXPath = element(by.xpath('//*[@id="ry-tooltip-8"]/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-passengers-container/fsw-passengers/div/button'));
 const selectSearchXPath = element(by.xpath('/html/body/hp-app-root/hp-home-container/hp-home/hp-search-widget-container/hp-search-widget/div/hp-flight-search-widget-container/fsw-flight-search-widget-container/fsw-flight-search-widget/div/div/div/button'));
 
-//Old project
+//Old project Locators
 const txtTodo = element(by.model('todoList.todoText'));
 const addButton = element(by.css('[value="add"]'));
 const todoList = element.all(by.xpath('//ul//li//label//span'));
 
 
+//Function actions on the page
 exports.clickAcceptCookies = () => {
     cookies.click();
 }
@@ -52,7 +54,7 @@ exports.clickOneWayTrip = () => {
 exports.clickDatePickerOneWay = (date) => {
     datePickerOneWay.click();
 
-    const newDate = date.split("/").reverse().join("-");
+    let newDate = date.split("/").reverse().join("-");
 
     const dateTravelOneWay = element(by.css('[data-id="'+newDate+'"]'));
     dateTravelOneWay.click();
