@@ -22,3 +22,33 @@ Then login popup shows up
 ## Pre-requisites and installation
 ### Pre-requisites
 In order to run the automation test we need to:
+- Install Node.js;
+- Install Protractor;
+- Install Cucumber;
+
+## Installation
+#### protractor-cucumber-application
+- step 1: Global Protractor Setup <br />
+<b>install protractor :</b> npm i -g protractor<br />
+- step 2: Local Setup <br />
+clone the application <br />
+git clone https://github.com/dariobotas/protractor-qa-challenge.git <br />
+cd protractor-qa-challenge <br />
+<b>install all the dependencies in package.json (like cucumber):</b> npm install <br />
+<b>install webdriver-manager:</b> npm install -g webdriver-manager (to install webdriver-manager)<br />
+- step 3: Start Application <br />
+<b>update webdriver :</b> open console and run command webdriver-manager update<br />
+<b>start webdriver :</b> open console and run command webdriver-manager start<br />
+open one more console <br />
+<b>run the application :</b> protractor app/protractor-conf.js<br />
+
+## Run the test
+Like in the step 3 of previous section, to run the test we need:
+- <b>update webdriver :</b> open console and run command webdriver-manager update<br />
+- <b>start webdriver :</b> open console and run command webdriver-manager start<br />
+- open one more console <br />
+- <b>run the application :</b> protractor app/protractor-conf.js<br />
+
+## Why automation in this way?
+1º Since i didn't know how to work with protractor and how to structure the files in 
+// npm install protractor-beatiful-reporter --save-dev
