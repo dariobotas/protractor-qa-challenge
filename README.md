@@ -50,5 +50,7 @@ Like in the step 3 of previous section, to run the test we need:
 - <b>run the application :</b> protractor app/protractor-conf.js<br />
 
 ## Why automation in this way?
-1º Since i didn't know how to work with protractor and how to structure the files in 
+<p>1º Since I didn't know how to work with protractor and how to structure 
+the files to work with Page Object and Cucumber, I needed to search about it. </p>
+<p>That's where i found this article https://medium.com/@amitprabhu/cucumber-with-protractor-275552fd32d9 (and a few others and videos as well)</p>
 // npm install protractor-beatiful-reporter --save-dev
