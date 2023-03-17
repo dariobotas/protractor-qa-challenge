@@ -2,6 +2,8 @@ const { browser, element } = require('protractor');
 
 var expect = require('chai').expect
 
+//Locators
+//Seat list Locators
 const buttonOkayGotIt = element(by.xpath('//*[@id="ry-modal-portal"]/div/seats-modal/ry-message-dialog/ry-dialog/div/div[2]/div[2]/button'));
 //*[@id="ry-modal-portal"]/div/seats-modal/ry-message-dialog/ry-dialog/div/div[2]/div[2]/button
 const continueButton = element(by.xpath('/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div/div/div/div/div/div[2]/div/seats-actions/span/button'));
@@ -11,6 +13,7 @@ const fastTrack = element(by.xpath('/html/body/seats-root/personalization-takeov
 const reservedSeats = element(by.xpath('//*[@id="ry-modal-portal"]/div/random-allocation-modal/ry-dialog/div/random-allocation-info/reinforcement-message/div/div[3]/div/button[2]'));
 const randomReservedSeats = element(by.xpath('//*[@id="ry-modal-portal"]/div/random-allocation-modal/ry-dialog/div/random-allocation-info/reinforcement-message/div/div[3]/div/button[1]'));
 
+//Function actions on the page
 exports.clickOkGotIt = () => {
     buttonOkayGotIt.click();
 }
@@ -76,7 +79,7 @@ exports.selectSeats = async function selectSeats(numberOfSeats) {
                 await browser.actions().click(element(by.id(seat))).perform();
                 seat = generateCode();
                 numberOfSeats--;
-                console.log(numberOfSeats);
+                //console.log(numberOfSeats);
                 //browser.sleep('2000');
             }else{
                 seat = generateCode();

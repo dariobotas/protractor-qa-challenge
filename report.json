@@ -19,6 +19,9 @@
       },
       {
         "passed": true
+      },
+      {
+        "passed": true
       }
     ],
     "events": [
@@ -26,28 +29,28 @@
         "emitterEvent": "testPass",
         "name": "Given I search for a flight from \"DUB\" to \"STN\" on 18/04/2023 for 2 adults and 1 childs",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-        "durationMillis": 11,
+        "durationMillis": 10,
         "sourceLocation": {
           "line": 3,
           "column": 1
         },
         "progress": {
           "step": 1,
-          "steps": 5
+          "steps": 6
         }
       },
       {
         "emitterEvent": "testPass",
         "name": "When I choose \"Value Fare\"",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-        "durationMillis": 2,
+        "durationMillis": 4,
         "sourceLocation": {
           "line": 4,
           "column": 1
         },
         "progress": {
           "step": 2,
-          "steps": 5
+          "steps": 6
         }
       },
       {
@@ -61,35 +64,49 @@
         },
         "progress": {
           "step": 3,
-          "steps": 5
+          "steps": 6
         }
       },
       {
         "emitterEvent": "testPass",
         "name": "And I choose the seats for the 3 passengers with \"no fast track\"",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-        "durationMillis": 4,
+        "durationMillis": 3,
         "sourceLocation": {
           "line": 6,
           "column": 1
         },
         "progress": {
           "step": 4,
-          "steps": 5
+          "steps": 6
         }
       },
       {
         "emitterEvent": "testPass",
-        "name": "And I choose 1 \"small bag only\", 20kg bags added for all passengers",
+        "name": "And I choose 1 \"small bag only\", 20kg bags added for all passengers with \"no extras\"",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-        "durationMillis": 1,
+        "durationMillis": 3,
         "sourceLocation": {
           "line": 7,
           "column": 1
         },
         "progress": {
           "step": 5,
-          "steps": 5
+          "steps": 6
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "Then login popup shows up",
+        "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
+        "durationMillis": 1,
+        "sourceLocation": {
+          "line": 8,
+          "column": 1
+        },
+        "progress": {
+          "step": 6,
+          "steps": 6
         }
       }
     ],
@@ -99,14 +116,14 @@
         {
           "name": "Given I search for a flight from \"DUB\" to \"STN\" on 18/04/2023 for 2 adults and 1 childs",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-          "durationMillis": 11,
+          "durationMillis": 10,
           "sourceLocation": {
             "line": 3,
             "column": 1
           },
           "progress": {
             "step": 1,
-            "steps": 5
+            "steps": 6
           }
         }
       ],
@@ -115,14 +132,14 @@
         {
           "name": "When I choose \"Value Fare\"",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-          "durationMillis": 2,
+          "durationMillis": 4,
           "sourceLocation": {
             "line": 4,
             "column": 1
           },
           "progress": {
             "step": 2,
-            "steps": 5
+            "steps": 6
           }
         }
       ],
@@ -138,7 +155,7 @@
           },
           "progress": {
             "step": 3,
-            "steps": 5
+            "steps": 6
           }
         }
       ],
@@ -147,34 +164,50 @@
         {
           "name": "And I choose the seats for the 3 passengers with \"no fast track\"",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-          "durationMillis": 4,
+          "durationMillis": 3,
           "sourceLocation": {
             "line": 6,
             "column": 1
           },
           "progress": {
             "step": 4,
-            "steps": 5
+            "steps": 6
           }
         }
       ],
       [
         "testPass",
         {
-          "name": "And I choose 1 \"small bag only\", 20kg bags added for all passengers",
+          "name": "And I choose 1 \"small bag only\", 20kg bags added for all passengers with \"no extras\"",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-          "durationMillis": 1,
+          "durationMillis": 3,
           "sourceLocation": {
             "line": 7,
             "column": 1
           },
           "progress": {
             "step": 5,
-            "steps": 5
+            "steps": 6
+          }
+        }
+      ],
+      [
+        "testPass",
+        {
+          "name": "Then login popup shows up",
+          "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
+          "durationMillis": 1,
+          "sourceLocation": {
+            "line": 8,
+            "column": 1
+          },
+          "progress": {
+            "step": 6,
+            "steps": 6
           }
         }
       ]
     ],
-    "duration": 21
+    "duration": 24
   }
 ]

@@ -3,6 +3,8 @@ const ryanairHompage = require('../../pages/ryanair-homepage')
 const valueFare = require('../../pages/ryanair-ValueFare')
 const seats = require('../../pages/ryanair-chooseseats')
 const bags = require('../../pages/ryanair-bag')
+const extras = require('../../pages/ryanair-extras')
+const review = require('../../pages/ryanair-reviewPay')
 //const {Given, When, And, Then} = require('cucumber')
 
 module.exports = function () {
@@ -89,21 +91,34 @@ module.exports = function () {
         browser.sleep('5000');
     });
 
-    this.When(/^I choose 1 "([^"]*)", ([^"]*)kg bags added for all passengers$/, function (cabinBag, kgBag) {
+    this.When(/^I choose 1 "([^"]*)", ([^"]*)kg bags added for all passengers with "([^"]*)"$/, function (cabinBag, kgBag, extra) {
         bags.selectCabinBag(cabinBag);
         browser.sleep('1000');
         bags.selectCheckinKgBagForAllPassengers(kgBag);
         browser.sleep('1000');
         bags.selectContinueButton();
         browser.sleep('5000');
-    });
-/*
-    this.And(/^I proceed to pay with selected seats and ([^"]*)kg bags added$/, function (kgBag) {
-        //ryanairHompage.setTextTodo('test');
-        //ryanairHompage.clickAddButton();
+        if(extra == "no extras"){
+            extras.continueButtonFirstExtra();
+            browser.sleep('4000');
+            extras.continueButtonSecondExtra();
+        }
+        browser.sleep('7000');
     });
 
+ /*   this.When(/^I choose "([^"]*)"$/, () => {
+        //ryanairHompage.setTextTodo('test');
+        //ryanairHompage.clickAddButton();
+        //if(extra == "no extras"){
+            extras.continueButtonFirstExtra();
+            browser.sleep('4000');
+            extras.continueButtonSecondExtra();
+        //}
+        browser.sleep('5000');
+    });*/
+
     this.Then('login popup shows up', () => {
-        ryanairHompage.validateData();
-    })*/
+        //ryanairHompage.validateData();
+        review.ValidatePopupLogin();
+    });
 }
