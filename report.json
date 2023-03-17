@@ -13,6 +13,12 @@
       },
       {
         "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
       }
     ],
     "events": [
@@ -20,33 +26,33 @@
         "emitterEvent": "testPass",
         "name": "Given I search for a flight from \"DUB\" to \"STN\" on 18/04/2023 for 2 adults and 1 childs",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-        "durationMillis": 7,
+        "durationMillis": 11,
         "sourceLocation": {
           "line": 3,
           "column": 1
         },
         "progress": {
           "step": 1,
-          "steps": 3
+          "steps": 5
         }
       },
       {
         "emitterEvent": "testPass",
         "name": "When I choose \"Value Fare\"",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-        "durationMillis": 3,
+        "durationMillis": 2,
         "sourceLocation": {
           "line": 4,
           "column": 1
         },
         "progress": {
           "step": 2,
-          "steps": 3
+          "steps": 5
         }
       },
       {
         "emitterEvent": "testPass",
-        "name": "And I fill the passenger fields with the names \"Mr\" \"Dário\" \"Botas\", \"Mr\" \"Alexandre\" \"Botas\", \"Timóteo\" \"Botas\" and proceed to pay with selected seats and 20kg bags added",
+        "name": "And I fill the passenger fields with the names \"Mr\" \"Dário\" \"Botas\", \"Mr\" \"Alexandre\" \"Botas\", \"Timóteo\" \"Botas\"",
         "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
         "durationMillis": 2,
         "sourceLocation": {
@@ -55,7 +61,35 @@
         },
         "progress": {
           "step": 3,
-          "steps": 3
+          "steps": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "And I choose the seats for the 3 passengers with \"no fast track\"",
+        "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
+        "durationMillis": 4,
+        "sourceLocation": {
+          "line": 6,
+          "column": 1
+        },
+        "progress": {
+          "step": 4,
+          "steps": 5
+        }
+      },
+      {
+        "emitterEvent": "testPass",
+        "name": "And I choose 1 \"small bag only\", 20kg bags added for all passengers",
+        "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
+        "durationMillis": 1,
+        "sourceLocation": {
+          "line": 7,
+          "column": 1
+        },
+        "progress": {
+          "step": 5,
+          "steps": 5
         }
       }
     ],
@@ -65,14 +99,14 @@
         {
           "name": "Given I search for a flight from \"DUB\" to \"STN\" on 18/04/2023 for 2 adults and 1 childs",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-          "durationMillis": 7,
+          "durationMillis": 11,
           "sourceLocation": {
             "line": 3,
             "column": 1
           },
           "progress": {
             "step": 1,
-            "steps": 3
+            "steps": 5
           }
         }
       ],
@@ -81,21 +115,21 @@
         {
           "name": "When I choose \"Value Fare\"",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
-          "durationMillis": 3,
+          "durationMillis": 2,
           "sourceLocation": {
             "line": 4,
             "column": 1
           },
           "progress": {
             "step": 2,
-            "steps": 3
+            "steps": 5
           }
         }
       ],
       [
         "testPass",
         {
-          "name": "And I fill the passenger fields with the names \"Mr\" \"Dário\" \"Botas\", \"Mr\" \"Alexandre\" \"Botas\", \"Timóteo\" \"Botas\" and proceed to pay with selected seats and 20kg bags added",
+          "name": "And I fill the passenger fields with the names \"Mr\" \"Dário\" \"Botas\", \"Mr\" \"Alexandre\" \"Botas\", \"Timóteo\" \"Botas\"",
           "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
           "durationMillis": 2,
           "sourceLocation": {
@@ -104,11 +138,43 @@
           },
           "progress": {
             "step": 3,
-            "steps": 3
+            "steps": 5
+          }
+        }
+      ],
+      [
+        "testPass",
+        {
+          "name": "And I choose the seats for the 3 passengers with \"no fast track\"",
+          "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
+          "durationMillis": 4,
+          "sourceLocation": {
+            "line": 6,
+            "column": 1
+          },
+          "progress": {
+            "step": 4,
+            "steps": 5
+          }
+        }
+      ],
+      [
+        "testPass",
+        {
+          "name": "And I choose 1 \"small bag only\", 20kg bags added for all passengers",
+          "category": "Protractor and cucumber angularjs ryanair search flight: Flight search",
+          "durationMillis": 1,
+          "sourceLocation": {
+            "line": 7,
+            "column": 1
+          },
+          "progress": {
+            "step": 5,
+            "steps": 5
           }
         }
       ]
     ],
-    "duration": 12
+    "duration": 21
   }
 ]
