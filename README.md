@@ -19,3 +19,6 @@ Then login popup shows up
 ```
 
 # Execution
+## Pre-requisites and installation
+### Pre-requisites
+In order to run the automation test we need to:
