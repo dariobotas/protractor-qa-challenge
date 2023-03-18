@@ -35,12 +35,12 @@ clone the application <br />
 git clone https://github.com/dariobotas/protractor-qa-challenge.git <br />
 cd protractor-qa-challenge (if you create a folder with this name and clone to it)<br />
 <b>install all the dependencies in package.json (like cucumber):</b> npm install <br />
-<b>install webdriver-manager:</b> npm install -g webdriver-manager (to install webdriver-manager)<br />
+<b>install webdriver-manager:</b> npm install -g webdriver-manager (to install webdriver-manager if not installed)<br />
 - step 3: Start Application <br />
 <b>update webdriver :</b> open console and run command webdriver-manager update<br />
 <b>start webdriver :</b> open console and run command webdriver-manager start<br />
 open one more console <br />
-<b>run the application :</b> protractor app/protractor-conf.js<br />
+<b>run the application :</b> protractor ./protractor-conf.js<br />
 
 ## Run the test
 Like in the step 3 of previous section, to run the test we need:

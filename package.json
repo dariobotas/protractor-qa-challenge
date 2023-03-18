@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
     "cucumber-html-reporter": "^6.0.0",
     "path": "^0.12.7",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1"
