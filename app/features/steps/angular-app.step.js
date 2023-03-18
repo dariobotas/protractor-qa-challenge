@@ -100,7 +100,7 @@ module.exports = function () {
         browser.sleep('5000');
         if(extra == "no extras"){
             extras.continueButtonFirstExtra();
-            browser.sleep('4000');
+            browser.sleep('5000');
             extras.continueButtonSecondExtra();
         }
         browser.sleep('7000');
@@ -121,4 +121,67 @@ module.exports = function () {
         //ryanairHompage.validateData();
         review.ValidatePopupLogin();
     });
+
+    
+
+    /*this.After(function(scenario, done) {
+        browser.getProcessedConfig().then(config => {
+            if (!config.screenshots.onErrorOnly || scenario.isFailed()) {
+                return browser.driver.takeScreenshot().then(function(png) {
+                    let decodedImage = new Buffer(png.replace(/^data:image\/(png|gif|jpeg);base64,/, ''), 'base64');
+                    scenario.attach(decodedImage, 'image/png');
+                    done();
+                });
+            } else {
+                done();
+            }
+        });
+    });
+/*
+    var outputDir = '/app';
+this.After(function(scenario, callback) {
+  if (scenario.isFailed()) {
+    browser.takeScreenshot().then(function(base64png) {
+      var decodedImage = new Buffer(base64png, 'base64').toString('binary');
+      scenario.attach(decodedImage, 'image/png');
+      callback();
+    }, function(err) {
+      callback(err);
+    });
+  } else {
+    callback();
+  }
+});*/
+/*
+var outputDir = './'
+var createHtmlReport = function(sourceJson) {
+  var CucumberHtmlReport = require('cucumber-html-report');
+  var report = new CucumberHtmlReport({
+    source: sourceJson, // source json
+    dest: outputDir // target directory (will create if not exists)
+  });
+  report.createReport();
+};
+
+var JsonFormatter = Cucumber.Listener.JsonFormatter();
+JsonFormatter.log = function(string) {
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir);
+  }
+
+  var targetJson = outputDir + 'cucumberreports.json';
+  fs.writeFile(targetJson, string, function(err) {
+    if (err) {
+      console.log('Failed to save cucumber test results to json file.');
+      console.log(err);
+    } else {
+      createHtmlReport(targetJson);
+    }
+  });
+};
+
+this.registerListener(JsonFormatter);*/
+
+
+
 }
