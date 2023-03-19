@@ -70,13 +70,13 @@ Like in the step 3 of previous section, to run the test we need:
 - <b>update webdriver :</b> open console and run command webdriver-manager update
 - <b>start webdriver :</b> open console and run command webdriver-manager start
 - open one more console
-- <b>run the application :</b> protractor ./protractor-conf.js
-  <b>Note:</b>You can run all of this using command prompt, powershell, git bash.
+- <b>run the application :</b> protractor ./protractor-conf.js<br />
+  <b>Note:</b> You can run all of this using command prompt, powershell, git bash.<br />
 
 ## Reporting
-  The HTML report is generated inside the ./app/html_report folder.
-  In this folder the report is generated after execution and with the date of execution.
-  You can open it with any web browser.
+  <p>The HTML report is generated inside the ./app/html_report folder.</p>
+  <p>In this folder the report is generated after execution and with the date of execution.</p>
+  <p>You can open it with any web browser.</p>
 
 ## Why automation in this way?
 <p>1. Since I didn't know how to work with protractor and how to structure 
