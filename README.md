@@ -60,7 +60,7 @@ In order to run the automation test we need to:
   - open one more console
   - <b>run the application</b> (run command): protractor ./protractor-conf.js
     ![image](https://user-images.githubusercontent.com/10281720/226212848-0f94007f-efb1-4539-8ebf-381e96e942d1.png)
-    ![image](https://user-images.githubusercontent.com/10281720/226213138-5b2598b8-b1ca-4b9e-ac11-9a634ea98c43.png)
+    ![image](https://user-images.githubusercontent.com/10281720/226217013-5e896d05-d1f5-42c6-a844-c089941f9c2f.png)
   - <b>stop webdriver</b> (run command): webdriver-manager shutdown
     - As alternative you can do the shorcut ctrl + c or press 'Enter'
   ![image](https://user-images.githubusercontent.com/10281720/226213215-b79a47c1-f681-43b0-afbb-ea95e96eeadf.png)<br />
@@ -84,3 +84,42 @@ the files to work with Page Object and Cucumber, I needed to search about it. </
 <p>That's where i found this article and github repository https://medium.com/@amitprabhu/cucumber-with-protractor-275552fd32d9. A few other articles and videos as well that helped me to understand how to work with it.</p>
 <p>These and other fonts/resources like stackoverflow helped me to automate as per requested.</p>
 <p>2. Automate in this ways make sense to me and helped to learn and understand how to automate with protractor.</p>
+<p>3. With this in mind, the objective with all of this is to have (ideally) this work tree with Protractor:</p>
+<pre>
+│   LICENSE
+│   package-lock.json
+│   package.json
+│   protractor-conf.js
+│   README.md
+│
+├───app
+│   ├───features
+│   │   │   angular-app.feature
+│   │   │
+│   │   └───steps
+│   │           angular-app.step.js
+│   │
+│   ├───pages
+│   │       ryanair-bag.js
+│   │       ryanair-chooseseats.js
+│   │       ryanair-extras.js
+│   │       ryanair-homepage.js
+│   │       ryanair-reviewPay.js
+│   │       ryanair-ValueFare.js
+│   │
+│   └───supports
+│           create-report-folder.js
+│           cucumber-html-reporter.js
+│           cucumber-json-report.js
+│
+└───reports
+    ├───html_report
+    │       cucumber_report_20230319_163214.html
+    │       cucumber_report_20230319_164213.html
+    │
+    ├───json_report
+    │       cucumber_report.json
+    │
+    ├───json_report_20230319_163446_3362
+    │       cucumber_report.json
+</pre>
