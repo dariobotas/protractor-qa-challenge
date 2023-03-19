@@ -36,6 +36,10 @@ In order to run the automation test we need to:
   - clone the application <br />
   - git clone https://github.com/dariobotas/protractor-qa-challenge.git <br />
   - cd protractor-qa-challenge (if you create a folder with this name and clone to it)<br />
+  - in case you clone my repository with my node_modules, may you need this extra steps:
+    - Open powershell
+    - cd protractor-qa-challenge <b>(go to this folder)<b>
+    - <b>type</b> rm -r node_modules/ <b>(to remove node_modules installed</b>
   - <b>install all the dependencies in package.json (like cucumber):</b> npm install <br />
   - <b>install webdriver-manager:</b> npm install -g webdriver-manager (to install webdriver-manager if not installed)<br />
 - step 3: Start Application <br />
@@ -57,4 +61,4 @@ Like in the step 3 of previous section, to run the test we need:
 the files to work with Page Object and Cucumber, I needed to search about it. </p>
 <p>That's where i found this article https://medium.com/@amitprabhu/cucumber-with-protractor-275552fd32d9 (and a few others and videos as well) that helped me to understand how to work with it.</p>
 <p>These and other fonts/resources like stackoverflow helped me to automate as per requested.</p>
-<p>2º Automate in this ways make sense to me and helped to learn easy and understand how to automate with protractor.</p>
+<p>2º Automate in this ways make sense to me and helped to learn and understand how to automate with protractor.</p>
