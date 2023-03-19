@@ -22,6 +22,7 @@ Then login popup shows up
 ## Pre-requisites and installation
 ### Pre-requisites
 In order to run the automation test we need to:
+- Install Java SE
 - Install Google Chrome
 - Install Node.js
 - Install Protractor
@@ -30,7 +31,6 @@ In order to run the automation test we need to:
 ## Installation
 #### protractor-cucumber-application
 - step 1: Global Protractor Setup <br />
-<b>install java SE</b><br />
 <b>install protractor :</b> npm i -g protractor<br />
 - step 2: Local Setup <br />
   - clone the application <br />
