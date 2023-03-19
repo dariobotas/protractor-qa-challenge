@@ -63,7 +63,8 @@ In order to run the automation test we need to:
     ![image](https://user-images.githubusercontent.com/10281720/226213138-5b2598b8-b1ca-4b9e-ac11-9a634ea98c43.png)
   - <b>stop webdriver</b> (run command): webdriver-manager shutdown
     - As alternative you can do the shorcut ctrl + c or press 'Enter'
-  ![image](https://user-images.githubusercontent.com/10281720/226213215-b79a47c1-f681-43b0-afbb-ea95e96eeadf.png)
+  ![image](https://user-images.githubusercontent.com/10281720/226213215-b79a47c1-f681-43b0-afbb-ea95e96eeadf.png)<br />
+  <b>Note:</b> You can run all of this using command prompt, powershell, git bash.<br />
 
 ## Run the test
 Like in the step 3 of previous section, to run the test we need:
@@ -71,10 +72,9 @@ Like in the step 3 of previous section, to run the test we need:
 - <b>start webdriver :</b> open console and run command webdriver-manager start
 - open one more console
 - <b>run the application :</b> protractor ./protractor-conf.js<br />
-  <b>Note:</b> You can run all of this using command prompt, powershell, git bash.<br />
 
 ## Reporting
-  <p>The HTML report is generated inside the ./app/html_report folder.</p>
+  <p>The HTML report is generated inside the ./reports/html_report folder.</p>
   <p>In this folder the report is generated after execution and with the date of execution.</p>
   <p>You can open it with any web browser.</p>
 
