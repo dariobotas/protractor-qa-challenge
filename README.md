@@ -47,7 +47,7 @@ In order to run the automation test we need to:
   - in case you clone my repository with my node_modules, may you need this extra steps:
     - Open powershell
     - cd protractor-qa-challenge <b>(go to this folder)<b>
-    - <b>type</b> rm -r node_modules/ <b>(to remove node_modules installed</b>
+    - <b>type</b> rm -r node_modules/ <b>(to remove node_modules installed) </b>
       ![image](https://user-images.githubusercontent.com/10281720/226212447-4fd1648e-9e80-4ae5-ab7e-74641a0b32a1.png)
   - <b>install all the dependencies in package.json (like cucumber):</b> npm install
     ![image](https://user-images.githubusercontent.com/10281720/226212622-9f16dd2f-a824-4fbb-8075-f186e27da50a.png)
