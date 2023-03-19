@@ -46,12 +46,12 @@ In order to run the automation test we need to:
     ![image](https://user-images.githubusercontent.com/10281720/226212230-dc579fcc-4363-4510-8110-cb07e3469f80.png)
   - in case you clone my repository with my node_modules, may you need this extra steps:
     - Open powershell
-    - cd protractor-qa-challenge <b>(go to this folder)<b>
-    - <b>type</b> rm -r node_modules/ <b>(to remove node_modules installed) </b>
+    - cd protractor-qa-challenge <b>(go to this folder)</b>
+    - <b>type</b> rm -r node_modules/ <b>(to remove node_modules installed)</b>
       ![image](https://user-images.githubusercontent.com/10281720/226212447-4fd1648e-9e80-4ae5-ab7e-74641a0b32a1.png)
-  - <b>install all the dependencies in package.json (like cucumber):</b> npm install
+  - <b>install all the dependencies in package.json (like cucumber): </b> npm install
     ![image](https://user-images.githubusercontent.com/10281720/226212622-9f16dd2f-a824-4fbb-8075-f186e27da50a.png)
-  - <b>install webdriver-manager:</b> npm install -g webdriver-manager (to install webdriver-manager if not installed)<br />
+  - <b>install webdriver-manager: </b> npm install -g webdriver-manager (to install webdriver-manager if not installed)<br />
 - step 3: Start Application
   - <b>update webdriver</b> (open console and run command): webdriver-manager update
     ![image](https://user-images.githubusercontent.com/10281720/226212695-c99d882d-4b9b-4c58-a1d4-5f6063439b21.png)
