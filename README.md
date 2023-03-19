@@ -59,6 +59,6 @@ Like in the step 3 of previous section, to run the test we need:
 ## Why automation in this way?
 <p>1º Since I didn't know how to work with protractor and how to structure 
 the files to work with Page Object and Cucumber, I needed to search about it. </p>
-<p>That's where i found this article https://medium.com/@amitprabhu/cucumber-with-protractor-275552fd32d9 (and a few others and videos as well) that helped me to understand how to work with it.</p>
+<p>That's where i found this article and github repository https://medium.com/@amitprabhu/cucumber-with-protractor-275552fd32d9 (and a few others and videos as well) that helped me to understand how to work with it.</p>
 <p>These and other fonts/resources like stackoverflow helped me to automate as per requested.</p>
 <p>2º Automate in this ways make sense to me and helped to learn and understand how to automate with protractor.</p>
