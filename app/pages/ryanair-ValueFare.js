@@ -5,8 +5,6 @@ var expect = require('chai').expect
 //Locators
 //Fligh list Locators
 const flightList = element.all(by.xpath('/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div'));
-//html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card/div/div/div[3]/button
-///html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card[1]/div/div/div[3]/button
 
 //Fare value type locators
 const valueFare = element(by.xpath('/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/fare-selector-container/fare-selector/div/fare-table-container/fare-table/div[2]/ry-spinner/div[1]/div/div/fare-card/div/div/button'));
@@ -32,16 +30,6 @@ const continueButton = element(by.xpath('/html/body/app-root/flights-root/div/di
 
 //Function actions on the page
 exports.selectFirstPriceValue = () => {
-    /*const countList = flightList.count().then((result) => {
-        expect(result).to.greaterThanOrEqual(1);
-    });
-    console.log(countList);
-    if(countList = 1){
-        browser.actions().click(element(by.xpath('/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card/div/div/div[3]/button'))).perform();
-    }
-    else {
-        browser.actions().click(element(by.xpath('/html/body/app-root/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[1]/journey-container/journey/flight-list/div/flight-card[1]/div/div/div[3]/button'))).perform();        
-    }*/
     flightList.first().element(by.tagName('button')).click();
 }
 

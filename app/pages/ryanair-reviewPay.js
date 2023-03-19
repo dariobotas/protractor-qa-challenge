@@ -1,7 +1,5 @@
 const { browser, element } = require('protractor');
 
-var expect = require('chai').expect
-
 const loginSingupPopUp = element(by.xpath('//*[@id="ry-modal-portal"]/div/ry-auth-popup-container/div'));
 
 exports.ValidatePopupLogin = async function selectSeats() {

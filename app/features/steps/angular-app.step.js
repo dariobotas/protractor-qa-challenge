@@ -5,11 +5,9 @@ const seats = require('../../pages/ryanair-chooseseats')
 const bags = require('../../pages/ryanair-bag')
 const extras = require('../../pages/ryanair-extras')
 const review = require('../../pages/ryanair-reviewPay')
-//const {Given, When, And, Then} = require('cucumber')
 
 module.exports = function () {
     this.Given(/^I search for a flight from "([^"]*)" to "([^"]*)" on ([^"]*) for ([^"]*) adults and ([^"]*) childs$/, (departure, destination, date, numberAdults, numberChilds) => {
-    //Given('I search for a flight from {string} to {string} for {int}\/{int}\/{int} for {int} adults and {int} childs', function (departure, destination, day,month,year,numberAdults,numberChilds) {
             browser.get('https://www.ryanair.com/ie/en/');
             browser.manage().window().maximize();
             //click accept cookies
@@ -26,7 +24,6 @@ module.exports = function () {
             //click date
             ryanairHompage.clickDatePickerOneWay(date);
             browser.sleep('1000');
-            //console.log(numberAdults);
             //select number of adults
             ryanairHompage.clickSelectNumberOfAdults(numberAdults);
             //select number of childs
@@ -35,16 +32,10 @@ module.exports = function () {
             ryanairHompage.clickDoneSelectPassengers();
             //Search Flight
             ryanairHompage.clickSearch();
-            //console.log(numberChilds);
             browser.sleep('4000');
-            //browser.pause();
         });
 
     this.When(/^I choose "([^"]*)"$/, function (fare) {
-    //this.When(/^I choose "([^"]*)", fill the passenger fields with the names "([^"]*)" "([^"]*)" "([^"]*)", "([^"]*)" "([^"]*)" "([^"]*)", "([^"]*)" "([^"]*)" and proceed to pay with selected seats and ([^"]*)kg bags added$/, function (fare,titleFirstPassenger, firstNameFirstPassenger, lastNameFirstPassenger, titleSecondPassenger, firstNameSecondPassenger, lastNameSecondPassenger, firstNameChildPassenger, lastNameChildPassenger, kgBag) {
-        //ryanairHompage.setTextTodo('test');
-        //ryanairHompage.clickAddButton();
-        
         //Select first value proposed
         valueFare.selectFirstPriceValue();
         browser.sleep('3000');
@@ -54,23 +45,13 @@ module.exports = function () {
         //Select login Later
         valueFare.loginLater();
         browser.sleep("2000");
-        //Fill Passenger information
-        /*valueFare.fillPassengers(titleFirstPassenger, firstNameFirstPassenger, lastNameFirstPassenger, titleSecondPassenger, firstNameSecondPassenger, lastNameSecondPassenger, firstNameChildPassenger, lastNameChildPassenger);
-        browser.sleep('1800');
-        valueFare.continueButton();
-        browser.sleep('7000');*/
-
-        //Choose Seats
-        
-        //console.log(fare);
     });
 
-    //this.When(/^And fill the passenger fields with the names "([^"]*)" "([^"]*)" "([^"]*)", "([^"]*)" "([^"]*)" "([^"]*)", "([^"]*)" "([^"]*)"$/, (titleFirstPassenger, firstNameFirstPassenger, lastNameFirstPassenger, titleSecondPassenger, firstNameSecondPassenger, lastNameSecondPassenger, firstNameChildPassenger, lastNameChildPassenger) => {
     this.When(/^I fill the passenger fields with the names "([^"]*)" "([^"]*)" "([^"]*)", "([^"]*)" "([^"]*)" "([^"]*)", "([^"]*)" "([^"]*)"$/, function (titleFirstPassenger, firstNameFirstPassenger, lastNameFirstPassenger, titleSecondPassenger, firstNameSecondPassenger, lastNameSecondPassenger, firstNameChildPassenger, lastNameChildPassenger) {
-        //ryanairHompage.setTextTodo('test');
-        //ryanairHompage.clickAddButton();
+        //Fill Passenger information
         valueFare.fillPassengers(titleFirstPassenger, firstNameFirstPassenger, lastNameFirstPassenger, titleSecondPassenger, firstNameSecondPassenger, lastNameSecondPassenger, firstNameChildPassenger, lastNameChildPassenger);
         browser.sleep('1800');
+        //Click continue button
         valueFare.continueButton();
         browser.sleep('4000');
     });
@@ -79,109 +60,38 @@ module.exports = function () {
         //Click got it
         seats.clickOkGotIt();
         browser.sleep('4000');
-        //var elt = document.getElementById('seat-03D');
-        //var elt = element(by.id('seat-03D'));//browser.executeScript("document.getElementById('seat-03D');");//
-        //var re = expect(elt.getTagName()).toBe('button');
-        //console.log(re);
+        //Select Seats
         seats.selectSeats(numberPassengers);
         browser.sleep('3000');
+        //Click Coninue button
         seats.clickContinueButton();
         browser.sleep('3000');
+        //Skip fast track
         seats.clickFastTrack(fastTrack);
         browser.sleep('5000');
     });
 
     this.When(/^I choose 1 "([^"]*)", ([^"]*)kg bags added for all passengers with "([^"]*)"$/, function (cabinBag, kgBag, extra) {
-        bags.selectCabinBag(cabinBag);
-        browser.sleep('1000');
-        bags.selectCheckinKgBagForAllPassengers(kgBag);
-        browser.sleep('1000');
-        bags.selectContinueButton();
-        browser.sleep('5000');
-        if(extra == "no extras"){
-            extras.continueButtonFirstExtra();
-            browser.sleep('5000');
-            extras.continueButtonSecondExtra();
-        }
-        browser.sleep('7000');
+      //Choose cabin bag
+      bags.selectCabinBag(cabinBag);
+      browser.sleep('1000');
+      //choose 20kg checkin bag
+      bags.selectCheckinKgBagForAllPassengers(kgBag);
+      browser.sleep('1000');
+      //click continue button
+      bags.selectContinueButton();
+      browser.sleep('5000');
+      //skip all extras
+      if(extra == "no extras"){
+          extras.continueButtonFirstExtra();
+          browser.sleep('5000');
+          extras.continueButtonSecondExtra();
+      }
+      browser.sleep('7000');
     });
-
- /*   this.When(/^I choose "([^"]*)"$/, () => {
-        //ryanairHompage.setTextTodo('test');
-        //ryanairHompage.clickAddButton();
-        //if(extra == "no extras"){
-            extras.continueButtonFirstExtra();
-            browser.sleep('4000');
-            extras.continueButtonSecondExtra();
-        //}
-        browser.sleep('5000');
-    });*/
 
     this.Then('login popup shows up', () => {
-        //ryanairHompage.validateData();
+        //validate pop-up
         review.ValidatePopupLogin();
     });
-
-    
-
-    /*this.After(function(scenario, done) {
-        browser.getProcessedConfig().then(config => {
-            if (!config.screenshots.onErrorOnly || scenario.isFailed()) {
-                return browser.driver.takeScreenshot().then(function(png) {
-                    let decodedImage = new Buffer(png.replace(/^data:image\/(png|gif|jpeg);base64,/, ''), 'base64');
-                    scenario.attach(decodedImage, 'image/png');
-                    done();
-                });
-            } else {
-                done();
-            }
-        });
-    });
-/*
-    var outputDir = '/app';
-this.After(function(scenario, callback) {
-  if (scenario.isFailed()) {
-    browser.takeScreenshot().then(function(base64png) {
-      var decodedImage = new Buffer(base64png, 'base64').toString('binary');
-      scenario.attach(decodedImage, 'image/png');
-      callback();
-    }, function(err) {
-      callback(err);
-    });
-  } else {
-    callback();
-  }
-});*/
-/*
-var outputDir = './'
-var createHtmlReport = function(sourceJson) {
-  var CucumberHtmlReport = require('cucumber-html-report');
-  var report = new CucumberHtmlReport({
-    source: sourceJson, // source json
-    dest: outputDir // target directory (will create if not exists)
-  });
-  report.createReport();
-};
-
-var JsonFormatter = Cucumber.Listener.JsonFormatter();
-JsonFormatter.log = function(string) {
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir);
-  }
-
-  var targetJson = outputDir + 'cucumberreports.json';
-  fs.writeFile(targetJson, string, function(err) {
-    if (err) {
-      console.log('Failed to save cucumber test results to json file.');
-      console.log(err);
-    } else {
-      createHtmlReport(targetJson);
-    }
-  });
-};
-
-this.registerListener(JsonFormatter);*/
-
-
-
 }
