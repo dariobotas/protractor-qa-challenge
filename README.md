@@ -24,6 +24,8 @@ Then login popup shows up
 In order to run the automation test we need to:
 - Install Java SE
 - Install Google Chrome
+- Install Git
+- Install VS Code (but not necessary)
 - Install Node.js
 - Install Protractor (step 1 - next section)
 - Install Cucumber (step 2 - next section)
@@ -31,7 +33,7 @@ In order to run the automation test we need to:
 ## Installation
 #### protractor-cucumber-application
 - step 1: Global Protractor Setup <br />
-<b>install protractor :</b> npm i -g protractor<br />
+<b>install protractor:</b> npm i -g protractor<br />
 - step 2: Local Setup <br />
   - clone the application <br />
   - git clone https://github.com/dariobotas/protractor-qa-challenge.git <br />
@@ -43,12 +45,12 @@ In order to run the automation test we need to:
   - <b>install all the dependencies in package.json (like cucumber):</b> npm install <br />
   - <b>install webdriver-manager:</b> npm install -g webdriver-manager (to install webdriver-manager if not installed)<br />
 - step 3: Start Application <br />
-  - <b>update webdriver:</b> open console and run command webdriver-manager update<br />
-  - <b>start webdriver:</b> run command webdriver-manager start<br />
+  - <b>update webdriver</b> (open console and run command): webdriver-manager update<br />
+  - <b>start webdriver</b> (run command): webdriver-manager start<br />
   - open one more console <br />
-  - <b>run the application :</b> protractor ./protractor-conf.js<br />
+  - <b>run the application:</b> protractor ./protractor-conf.js<br />
   - <b>stop webdriver:</b> run command webdriver-manager shutdown<br />
-  - As alternative you can do the shorcut ctrl + c
+    - As alternative you can do the shorcut ctrl + c
 ## Run the test
 Like in the step 3 of previous section, to run the test we need:
 - <b>update webdriver :</b> open console and run command webdriver-manager update<br />
