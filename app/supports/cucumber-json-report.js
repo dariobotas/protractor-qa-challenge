@@ -9,7 +9,7 @@ module.exports = function() {
 
   JsonFormatter.log = function(string) {
 
-    var outputDir = './json_report';
+    var outputDir = './reports/json_report';
     var targetJson = outputDir + '/cucumber_report.json';
 
     if (fs.existsSync(outputDir)) {

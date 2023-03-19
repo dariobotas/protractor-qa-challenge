@@ -1,0 +1,112 @@
+[
+  {
+    "elements": [
+      {
+        "id": "protractor-and-cucumber-angularjs-ryanair-search-flight;flight-search",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Flight search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I search for a flight from \"DUB\" to \"STN\" on 18/04/2023 for 2 adults and 1 childs",
+            "result": {
+              "status": "passed",
+              "duration": 5393000
+            },
+            "line": 3,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\steps\\angular-app.step.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I choose \"Value Fare\"",
+            "result": {
+              "status": "passed",
+              "duration": 2069800
+            },
+            "line": 4,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\steps\\angular-app.step.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I fill the passenger fields with the names \"Mr\" \"Dário\" \"Botas\", \"Mr\" \"Alexandre\" \"Botas\", \"Timóteo\" \"Botas\"",
+            "result": {
+              "status": "passed",
+              "duration": 4515200
+            },
+            "line": 5,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\steps\\angular-app.step.js:69"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I choose the seats for the 3 passengers with \"no fast track\"",
+            "result": {
+              "status": "passed",
+              "duration": 2115000
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\steps\\angular-app.step.js:78"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I choose 1 \"small bag only\", 20kg bags added for all passengers with \"no extras\"",
+            "result": {
+              "status": "passed",
+              "duration": 2948200
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\steps\\angular-app.step.js:94"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "login popup shows up",
+            "result": {
+              "status": "passed",
+              "duration": 441400
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\steps\\angular-app.step.js:120"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 616900
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:69"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "protractor-and-cucumber-angularjs-ryanair-search-flight",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Protractor and cucumber angularjs ryanair search flight",
+    "tags": [],
+    "uri": "C:\\Users\\alexa\\Portfolio\\protractor-cucumber-application\\app\\features\\angular-app.feature"
+  }
+]

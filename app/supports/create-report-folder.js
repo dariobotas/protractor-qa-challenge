@@ -3,7 +3,7 @@ var fse = require("fs-extra");
 
 module.exports = {
     setup: function() {
-        var reportDir = './report';//this.config.options.reportDir;
+        var reportDir = './reports/json_report';//this.config.options.reportDir;
         if (fse.existsSync(reportDir)) {
             fse.moveSync(
                reportDir, 

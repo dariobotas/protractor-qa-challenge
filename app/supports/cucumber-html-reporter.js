@@ -5,8 +5,8 @@ module.exports = {
     postResults: () => {
         var options = {
             theme: 'bootstrap',
-            jsonFile: './json_report/cucumber_report.json',
-            output: './app/html_report/cucumber_report'+ "_" + moment().format("YYYYMMDD_HHmmss")+'.html',
+            jsonFile: './reports/json_report/cucumber_report.json',
+            output: './reports/html_report/cucumber_report'+ "_" + moment().format("YYYYMMDD_HHmmss")+'.html',
             reportSuiteAsScenarios: true,
             scenarioTimestamp: true,
             launchReport: true,

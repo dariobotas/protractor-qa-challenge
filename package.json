@@ -1,8 +1,7 @@
 {
-  "name": "cucumberjs-protractor-reporter",
-  "version": "1.2.1",
-  "description": "protractor with Cucumber JS",
-  "license": "ISC",
+  "name": "protractor-cucumber-application-dario",
+  "version": "1.0.0",
+  "description": "Protractor with Cucumber JS to automate search flight in Ryanair website",
   "peerDependencies": {
     "cucumber": ">= 1.3.0"
   },
