@@ -77,7 +77,7 @@ Like in the step 3 of previous section, to run the test we need:
   <p>The HTML report is generated inside the ./reports/html_report folder.</p>
   <p>In this folder the report is generated after execution and with the date of execution.</p>
   <p>You can open it with any web browser.</p>
-  ![image](https://user-images.githubusercontent.com/10281720/226221253-e81e3add-b5f1-4bc1-8eae-d47d028a2ab6.png)
+  <img src="https://user-images.githubusercontent.com/10281720/226221253-e81e3add-b5f1-4bc1-8eae-d47d028a2ab6.png">
 
 
 ## Why automation in this way?
