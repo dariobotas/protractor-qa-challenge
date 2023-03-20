@@ -117,12 +117,8 @@ the files to work with Page Object and Cucumber, I needed to search about it. </
 └───reports
     ├───html_report
     │       cucumber_report_20230319_163214.html
-    │       cucumber_report_20230319_164213.html
     │
     ├───json_report
-    │       cucumber_report.json
-    │
-    ├───json_report_20230319_163446_3362
     │       cucumber_report.json
 </pre>
 <p>In the bellow tree the idea is to have:</p>
