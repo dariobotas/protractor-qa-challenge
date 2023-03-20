@@ -77,6 +77,7 @@ Like in the step 3 of previous section, to run the test we need:
   <p>The HTML report is generated inside the ./reports/html_report folder.</p>
   <p>In this folder the report is generated after execution and with the date of execution.</p>
   <p>You can open it with any web browser.</p>
+  ![image](https://user-images.githubusercontent.com/10281720/226221174-78e09f23-fc16-41d5-9cc4-8509dc575825.png)
 
 ## Why automation in this way?
 <p>1. Since I didn't know how to work with protractor and how to structure 
