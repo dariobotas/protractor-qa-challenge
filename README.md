@@ -39,7 +39,7 @@ In order to run the automation test we need to:
 
 - step 2: Local Setup <br />
   - clone the application <br />
-  - `git clone https://github.com/dariobotas/protractor-qa-challenge.git` <br />
+  - `git clone https://github.com/dariobotas/protractor-qa-challenge.git folder/here` <br />
     ![image](https://user-images.githubusercontent.com/10281720/226212084-cdf954d4-5538-4247-a201-a51c59232d2d.png)
     ![image](https://user-images.githubusercontent.com/10281720/226212267-3fb69eea-a0bb-4afe-bd86-75d0202f2bbe.png)
   - `cd protractor-qa-challenge` (if you create a folder with this name and clone to it)<br />
