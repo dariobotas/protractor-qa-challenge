@@ -83,7 +83,7 @@ Like in the step 3 of previous section, to run the test we need:
 the files to work with Page Object and Cucumber, I needed to search about it. </p>
 <p>That's where i found this article and github repository https://medium.com/@amitprabhu/cucumber-with-protractor-275552fd32d9. A few other articles and videos as well that helped me to understand how to work with it.</p>
 <p>These and other fonts/resources like stackoverflow helped me to automate as per requested.</p>
-<p>2. Automate in this ways make sense to me and helped to learn and understand how to automate with protractor.</p>
+<p>2. Automate in this ways make sense and helped me to learn and understand how to automate with Protractor.</p>
 <p>3. With this in mind, the objective with all of this is to have (ideally) this work tree with Protractor:</p>
 <pre>
 │   LICENSE
@@ -123,3 +123,14 @@ the files to work with Page Object and Cucumber, I needed to search about it. </
     ├───json_report_20230319_163446_3362
     │       cucumber_report.json
 </pre>
+<p>In the bellow tree the idea is to have:</p>
+ - app folder: where reside all the folders and files related to the Protractor automation
+ - reports folder: where the json and HTML reports will be created
+<p>Inside the app folder there is three main folders:</p>
+ - features: where are the feature files with the scenarios executed by the Js files inside the steps folder
+ - pages: where are the files with all the locators and respective functions to provide the inputs in the website for each page
+ - supports: where are the script files to provide the json and HTML reports
+ 
+## Lessons learned
+<p>Automate with Protractor was for sure a very interesting challenge that i'll use to get better with Testing Automation itself and using different tools for it.</p>
+<p>With this challenge I was encouraged to continue using the tool and improve the scenario as well in order to refine the automation and reporting.</p>
