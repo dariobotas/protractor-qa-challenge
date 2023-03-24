@@ -1,4 +1,4 @@
-# qa-web-challenge
+# Flight Test scenario automation
 ## Requirements
 - Please automate a test to search for a flight, select VALUE fare, skip login after fare select, navigate through extras pages selecting seats and 20kg bags and verify a login popup is displayed before payment on https://www.ryanair.com/ie/en/
 - Use any one of the following languages:
